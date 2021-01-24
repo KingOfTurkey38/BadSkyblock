@@ -21,7 +21,7 @@ class SessionSubmitTask extends AsyncTask {
 
     public function onRun()
     {
-        $con = mysqli_connect("eu.sql.titannodes.com", "u6227_yE8aiBRo9K", "KIL=v@7z40nW+rhSucDKinDn", "s6227_turkey", 3306);
+        $con = mysqli_connect("", "", "K", "", 3306);
         $query = $con->query("SELECT * FROM Users WHERE username='$this->player'");
         $query2 = null;
         $result1 = $query->fetch_array();

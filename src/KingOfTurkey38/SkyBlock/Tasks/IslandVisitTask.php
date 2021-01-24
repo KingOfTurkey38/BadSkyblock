@@ -24,7 +24,7 @@ class IslandVisitTask extends AsyncTask {
 
     public function onRun()
     {
-        $con = mysqli_connect("eu.sql.titannodes.com", "u6227_yE8aiBRo9K", "KIL=v@7z40nW+rhSucDKinDn", "s6227_turkey", 3306);
+        $con = mysqli_connect("", "", "K", "", 3306);
         $query = $con->query("SELECT * FROM Islands WHERE island='$this->island'");
         $this->setResult($query->fetch_array());
     }
@@ -56,7 +56,6 @@ class IslandVisitTask extends AsyncTask {
             $player->teleport(new Position($data["data"]["warp"]["x"], $data["data"]["warp"]["y"], $data["data"]["warp"]["z"], $level));
         } else {
             $player->sendMessage($messages[Messages::ISLAND_WARP_NOT_SET]);
-            return;
         }
 
 
