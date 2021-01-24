@@ -1,0 +1,62 @@
+---
+forms:
+  non_island_form: #adasi olmayin oyunçulara bu form gönderilecek
+    title: "Ada Menü"
+    buttons:
+      island_create_button: "Ada olustur"
+      island_visit_button: "Ada ziyaret et"
+  island_form:
+    title: "Ada Menü"
+    buttons:
+      island_home_button: "Ada isinlan"
+      island_set_home_button: "Ada Evi"
+      island_set_warp_button: "Ada warp koy"
+      island_unset_warp_button: "Ada warp sil"
+      island_visit_button: "Ada ziyaret et"
+      island_remove_partner_button: "Ortak sil"
+      island_add_partner_button: "Ortak ekle"
+      island_partner_options_button: "Ortak ayarlari"
+      island_disband_button: "Ada sil"
+  add_partner_form:
+    title: "Ortak ekle"
+    label: "Bir oyuncu seç ve onu adana ekle"
+    dropdown_text: "Oyuncular:"
+  remove_partner_form:
+    title: "Ortak sil"
+    label: "Bir ortak seç ve onu adandan sil!"
+    dropdown_text: "Ortaklar:"
+  island_visit_form:
+    title: "Ada ziyaret et"
+    label: "Oyuncu ismi yaz"
+    input_text: "Oyuncu: "
+  partner_options_form:
+    title: "Ortak ayarli"
+    label: "Ayarla"
+    block_break_option: "Blok kirma"
+    block_place_option: "Blok koyma"
+    open_chest_option: "Sandik açma"
+    pick_up_item_option: "Item toplama"
+  partner_accept_form:
+    title: "Ortak Istekleri"
+    label: "Bir istek seç ve o adaya ortak ol"
+    dropdown_text: "Istekler:"
+
+
+settings:
+  max_amount_of_partners: 3 #max ortak
+
+messages:
+  reached_max_partners: "Daha fazla ortak alamasin adana!"
+  successfully_created_island: "§7§lBasariyla ada olusturdun!"
+  successfully_updated_home: "Basariyla ada evi'nin yerini degistirdin!"
+  successfully_set_warp: "Basariyla ada warpini olusturdun"
+  successfully_unset_warp: "Basariyla ada warpini sildin"
+  successfully_removed_partner: "Basariyla ortagini adadan sildin"
+  successfully_added_partner: "Basariyla adana ortak eklendi"
+  successfully_sent_partner_request: "Basairyla oyuncuya ortak istegi gönderdin"
+  successfully_accepted_partner_request: "Basariyla adaya ortak oldun!"
+  successfully_disband_island: "Basariyla adan silindi!"
+  invalid_island_given: "Ada bulunamadi"
+  island_warp_not_set: "Ada ziyarete açik degil"
+  player_has_no_island: "O oyuncunun adasi yok!"
+...
